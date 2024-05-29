@@ -10,6 +10,32 @@ FogOff ist mehr als nur eine App - es ist eine Erfahrung, die Ihnen ein Gefühl 
 
 *llama-2-70b-chat*
 
+# Features
+
+## Map
+
+Uncover the world map
+
+[<img src="./documentation/map.jpg" width="200"/>](./documentation/map.jpg)
+
+## Dynamic color theme
+
+Color theme changes according to the system wide theme:
+
+[<img src="./documentation/dynamic_color.jpg" width="200"/>](./documentation/dynamic_color.jpg)
+
+## World exploration stats
+
+Get stats about which cities and countries you explored:
+
+[<img src="./documentation/stats.jpg" width="200"/>](./documentation/stats.jpg)
+
+## Widget
+
+Use the widget to start and stop the gps tracking on your home screen:
+
+[<img src="./documentation/widget.jpg" width="200"/>](./documentation/widget.jpg)
+
 
 ## How to use
 
