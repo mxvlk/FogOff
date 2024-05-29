@@ -1,14 +1,12 @@
 # FogOff
 
-Wir stellen vor: FogOff - die revolutionäre App, die die Art und Weise, wie wir die Welt erkunden, verändern wird!
+FogOff is a revolutionary GPS-based app that brings the concept of Fog of War to real-life exploration. This innovative app overlays a fog-like layer on your GPS map, revealing your surroundings as you move through them. Imagine turning your daily commute, hike, or road trip into a thrilling adventure game.
 
-Stellen Sie sich eine Welt vor, in der das Unbekannte darauf wartet, entdeckt zu werden, in der der Nebel des Krieges die Landschaft einhüllt und nur das offenbart, was sich direkt vor Ihnen befindet. Genau das bietet FogOff - eine immersive Erfahrung, die Sie von Anfang an fesseln wird.
+## How to use
 
-Mit FogOff wissen Sie nie, was Sie hinter der nächsten Ecke erwartet. Der Nebel schafft eine geheimnisvolle Atmosphäre, so dass sich jeder Schritt wie ein Abenteuer anfühlt. Du wirst durch unbekannte Gebiete wandern, verborgene Juwelen entdecken und über Geheimnisse stolpern, die dir vorher verborgen waren.
+- Add your own Google Maps API key (in the AndroidManifest.xml)
+- Compile the app
 
-FogOff ist mehr als nur eine App - es ist eine Erfahrung, die Ihnen ein Gefühl der Erleichterung und Inspiration vermitteln wird. Es ist an der Zeit, den Schleier zu lüften und zu sehen, was sich hinter dem Nebel verbirgt. Sind Sie bereit? Laden Sie FogOff jetzt herunter und erforschen Sie die Welt wie nie zuvor!
-
-*llama-2-70b-chat*
 
 # Features
 
@@ -47,7 +45,3 @@ Use the widget to start and stop the gps tracking on your home screen:
 Import your already tracked walks from any GPX file on the settings page
 
 
-## How to use
-
-- Add your own Google Maps API key (in the AndroidManifest.xml)
-- Compile the app
