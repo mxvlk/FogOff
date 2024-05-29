@@ -14,9 +14,15 @@ FogOff ist mehr als nur eine App - es ist eine Erfahrung, die Ihnen ein Gefühl 
 
 ## Map
 
-Uncover the world map
+Uncover the world map in a user adjustable radius (change it on the settings page)
 
 [<img src="./documentation/map.jpg" width="500"/>](./documentation/map.jpg)
+
+## Widget
+
+Get notified about being tracked by the app:
+
+[<img src="./documentation/notification.jpg" width="500"/>](./documentation/notification.jpg)
 
 ## Dynamic color theme
 
@@ -35,6 +41,10 @@ Get stats about which cities and countries you explored:
 Use the widget to start and stop the gps tracking on your home screen:
 
 [<img src="./documentation/widget.jpg" width="600"/>](./documentation/widget.jpg)
+
+## GPX Import
+
+Import your already tracked walks from any GPX file on the settings page
 
 
 ## How to use
