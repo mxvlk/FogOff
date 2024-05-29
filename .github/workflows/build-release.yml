@@ -1,0 +1,60 @@
+# if you want to use this remember to add a signing key, alias, key store password and key password to your github secrets
+
+name: build and release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: gradle/wrapper-validation-action@v1
+
+      - name: Set Up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
+      - name: Build APK
+        run: ./gradlew assembleRelease
+
+      - uses: r0adkll/sign-android-release@v1
+        name: Sign app APK
+        id: sign_app
+        with:
+          releaseDirectory: app/build/outputs/apk/release
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
+        env:
+          BUILD_TOOLS_VERSION: "34.0.0"
+
+      - name: Release APK
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: ${{steps.sign_app.outputs.signedReleaseFile}}
+          tag: v1.0.${{ github.run_number }}
+
+      - name: Rename APK
+        run: mv ${{steps.sign_app.outputs.signedReleaseFile}} app/build/outputs/apk/release/FogApp.apk
+          
+      - name: copy apk to fogoff.fun server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          port: ${{ secrets.SSH_PORT }}
+          key: ${{ secrets.SSH_KEY }}
+          source: app/build/outputs/apk/release/FogApp.apk
+          target: /home/fogoff/app
+          overwrite: true
