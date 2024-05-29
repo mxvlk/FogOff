@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">FogOff</string>
+
+    <string name="notification_channel_id">fog_app</string>
+    <string name="notification_channel_name">fog_app</string>
+
+    <string name="zoom_in">zoom in</string>
+    <string name="zoom_out">zoom out</string>
+    <string name="my_location">my location</string>
+
+    <string name="gps_database_name">polygon_db</string>
+    <string name="settings_database_name">settings_db</string>
+
+    <string name="app_widget_description">FogOff Widget</string>
+
+    <string name="tracking_icon_off_desc">Tracking Icon off</string>
+    <string name="tracking_icon_on_desc">Tracking Icon on</string>
+    <string name="stop_tracking">Stop tracking</string>
+    <string name="start_tracking">Start tracking</string>
+</resources>
