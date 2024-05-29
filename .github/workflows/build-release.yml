@@ -39,15 +39,18 @@ jobs:
         env:
           BUILD_TOOLS_VERSION: "34.0.0"
 
+      # release on github
       - name: Release APK
         uses: ncipollo/release-action@v1
         with:
           artifacts: ${{steps.sign_app.outputs.signedReleaseFile}}
           tag: v1.0.${{ github.run_number }}
 
+      # rename app to FogApp
       - name: Rename APK
         run: mv ${{steps.sign_app.outputs.signedReleaseFile}} app/build/outputs/apk/release/FogApp.apk
-          
+      
+      # copy the app to the server
       - name: copy apk to fogoff.fun server
         uses: appleboy/scp-action@v0.1.7
         with:
