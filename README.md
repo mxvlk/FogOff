@@ -16,7 +16,7 @@ FogOff ist mehr als nur eine App - es ist eine Erfahrung, die Ihnen ein Gefühl 
 
 Uncover the world map
 
-[<img src="./documentation/map.jpg" width="600"/>](./documentation/map.jpg)
+[<img src="./documentation/map.jpg" width="500"/>](./documentation/map.jpg)
 
 ## Dynamic color theme
 
