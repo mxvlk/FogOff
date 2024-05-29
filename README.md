@@ -4,7 +4,9 @@ FogOff is a revolutionary GPS-based app that brings the concept of Fog of War to
 
 ## How to use
 
-- Add your own Google Maps API key (in the AndroidManifest.xml)
+Note: I will not provide a API key because only around 500 map reloads per day are free
+
+- Add your own Google Maps API key (in the AndroidManifest.xml) 
 - Compile the app
 
 
